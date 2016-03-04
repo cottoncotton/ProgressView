@@ -64,7 +64,7 @@ public class ProgressView extends View {
         mPaint.setColor(Color.rgb(211,211,211));
         RectF rectBlackBg = new RectF(2, 2, mWidth-2, mHeight-2);
         canvas.drawRoundRect(rectBlackBg, round, round, mPaint);
-
+		//画进度
         float section = currentCount/maxCount;
         RectF rectProgressBg = new RectF(3, 3, (mWidth-3)*section, mHeight-3);
         mPaint.setColor(color);
